@@ -4,7 +4,7 @@ Et s’il était possible de donner vie aux personnages de l’univers futuriste
 
 Pour relever ce défi, nous avons utilisé les dernières technos mobiles :
 
-Jetpack Compose pour l’UI ;
-CameraX pour l’utilisation de l’appareil photo ;
-ML Kit pour l’OCR ;
-ARCore pour la partie réalité augmentée.
+- Jetpack Compose pour l’UI 
+- CameraX pour l’utilisation de l’appareil photo 
+- ML Kit pour l’OCR 
+- ARCore pour la partie réalité augmentée
