@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OCeAR</string>
+
+    <string name="ask_permission">Demander l\'autorisation</string>
+    <string name="please_grant_permission">Veuillez autoriser la permission de la caméra</string>
+    <string name="camera_required">La caméra est requise pour l\'application, veuillez autoriser la permission</string>
+    <string name="place_object">Ancrer le modèle</string>
+    <string name="new_object">Charger un nouveau modèle</string>
+    <string name="start_reading">Démarrer la lecture</string>
+    <string name="illustration_content_description">Illustration</string>
+    <string name="app_description_regular">\"L\'application qui vous plonge dans les livres grâce à la \"</string>
+    <string name="app_description_bold">réalité augmentée</string>
+</resources>

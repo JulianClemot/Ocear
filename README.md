@@ -4,7 +4,11 @@ Et s’il était possible de donner vie aux personnages de l’univers futuriste
 
 Pour relever ce défi, nous avons utilisé les dernières technos mobiles :
 
-- Jetpack Compose pour l’UI 
-- CameraX pour l’utilisation de l’appareil photo 
-- ML Kit pour l’OCR 
+- Jetpack Compose pour l’UI
+- CameraX pour l’utilisation de l’appareil photo
+- ML Kit pour l’OCR
 - ARCore pour la partie réalité augmentée
+
+## Modèles 3d
+
+Pour des raisons de modèles 3d propriétaires, un seul modèle 3D est fourni pour l'ensemble des mots-clés détectés. Pour ajouter ses propres mots-clés et ses propres modèles, il faut éditer le fichier `ArKeyword.kt`
