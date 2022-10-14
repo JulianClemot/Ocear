@@ -24,7 +24,7 @@ enum class ArKeyword(
         ),
         placementMode = PlacementMode.PLANE_HORIZONTAL,
         scale = 1f,
-        fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
+        fileLocation = "models/captain_nemo.glb",
     ),
     NED_LAND(
         "Ned Land",
@@ -36,7 +36,7 @@ enum class ArKeyword(
         ),
         placementMode = PlacementMode.PLANE_HORIZONTAL,
         scale = 1f,
-        fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
+        fileLocation = "models/female_fisher.glb",
         rotationDegrees = listOf(270F, 0F, 0F)
     ),
     ARONNAX(
@@ -50,7 +50,7 @@ enum class ArKeyword(
         ),
         placementMode = PlacementMode.PLANE_HORIZONTAL,
         scale = 1f,
-        fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
+        fileLocation = "models/professor.glb",
     ),
     CONSEIL(
         "Conseil",
@@ -61,7 +61,7 @@ enum class ArKeyword(
         ),
         placementMode = PlacementMode.PLANE_HORIZONTAL,
         scale = 1f,
-        fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
+        fileLocation = "models/conseil.glb",
     ),
     NAUTILUS(
         "Nautilus",
@@ -75,7 +75,7 @@ enum class ArKeyword(
         ),
         placementMode = PlacementMode.PLANE_HORIZONTAL,
         scale = 1f,
-        fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
+        fileLocation = "models/nautilus.glb",
     ),
     BOAT(
         "Bateau",
@@ -85,11 +85,14 @@ enum class ArKeyword(
             "frégate",
             "navire",
             "barque",
-            "Abraham Lincoln"
+            "Abraham Lincoln",
+            "Abraham-Lincoln",
+            "Abraham",
+            "Lincoln",
         ),
         placementMode = PlacementMode.PLANE_HORIZONTAL,
         scale = 1.5f,
-        fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
+        fileLocation = "models/flying_boat.glb",
     ),
     SEA(
         "Océan",
@@ -107,7 +110,7 @@ enum class ArKeyword(
         ),
         placementMode = PlacementMode.PLANE_HORIZONTAL,
         scale = 1.5f,
-        fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
+        fileLocation = "models/ocean_wave.glb",
     ),
     EARTH(
         "Terre",
@@ -119,7 +122,7 @@ enum class ArKeyword(
         ),
         placementMode = PlacementMode.PLANE_HORIZONTAL_AND_VERTICAL,
         scale = 1f,
-        fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
+        fileLocation = "models/earth.glb",
     ),
     MOON(
         "Lune",
@@ -128,7 +131,7 @@ enum class ArKeyword(
         ),
         placementMode = PlacementMode.PLANE_HORIZONTAL_AND_VERTICAL,
         scale = 1f,
-        fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
+        fileLocation = "models/animated_moon.glb",
     );
 
     fun to3dModel() = Model3d(
