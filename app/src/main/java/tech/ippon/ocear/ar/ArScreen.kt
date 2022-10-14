@@ -56,7 +56,7 @@ fun ArScreen(
                 onClick = { onModelAnchorClick() },
                 colors = ButtonDefaults.buttonColors(sceneViewUiState.chosenColor)
             )
-            { Text(stringResource(id = R.string.place_object)) }
+            { Text(stringResource(id = R.string.place_object), color = Color.White) }
         }
         if (keywordsUiState is KeywordsUiState.KeywordsRetrieved) {
             LazyRow(
