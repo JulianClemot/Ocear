@@ -5,11 +5,13 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -25,7 +27,8 @@ import tech.ippon.ocear.R
 @OptIn(ExperimentalPermissionsApi::class)
 @Composable
 fun CameraPermissionCheck(
-    content: @Composable () -> Unit
+    colorChosen: Color,
+    content: @Composable () -> Unit,
 ) {
     val permissionState =
         rememberPermissionState(permission = Manifest.permission.CAMERA)
@@ -66,8 +69,10 @@ fun CameraPermissionCheck(
                 Text(textAlign = TextAlign.Center, text = textToShow)
                 Button(
                     modifier = Modifier.padding(top = 10.dp),
-                    onClick = { permissionState.launchPermissionRequest() }) {
-                    Text(stringResource(id = R.string.ask_permission))
+                    onClick = { permissionState.launchPermissionRequest() },
+                    colors = ButtonDefaults.buttonColors(colorChosen)
+                ) {
+                    Text(stringResource(id = R.string.ask_permission), color = Color.White)
                 }
             }
         }

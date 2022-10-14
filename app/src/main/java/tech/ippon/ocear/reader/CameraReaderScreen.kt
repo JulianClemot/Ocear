@@ -17,7 +17,7 @@ fun CameraReaderScreen(
     goToArScreen: (keywords: List<ArKeyword>, chosenColor: Color) -> Unit,
 ) {
     cameraViewModel.chosenColor = chosenColor
-    CameraPermissionCheck {
+    CameraPermissionCheck(colorChosen = chosenColor) {
         CameraCapture(
             modifier = modifier,
             onImageTaken = cameraViewModel.onImageTaken(goToArScreen),
